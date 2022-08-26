@@ -1,0 +1,21 @@
+{
+    "version": "0.2",
+    "__metadata__" : {
+        "url" : "http://geneontology.org/docs/go-citation-policy/",
+        "license_url" : "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "licence" : "Creative Commons Attribution 4.0 Unported License",
+        "author" : {
+            "name" : "Eric Zhou",
+            "url" : "https://github.com/ericz1803"
+        }
+    },
+    "requires": ["networkx", "obonet"],
+    "dumper" : {
+        "data_url" : "http://purl.obolibrary.org/obo/go.obo",
+        "uncompress" : false
+    },
+    "uploader" : {
+        "parser" : "parser:load_data",
+        "on_duplicates" : "error"
+    }
+}
