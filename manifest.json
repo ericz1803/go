@@ -9,13 +9,13 @@
             "url" : "https://github.com/ericz1803"
         }
     },
-    "requires": ["networkx", "obonet"],
     "dumper" : {
         "data_url" : "http://purl.obolibrary.org/obo/go.obo",
         "uncompress" : false
     },
     "uploader" : {
-        "parser" : "parser:load_data",
+        "parser" : "hub.dataload.data_parsers:load_obo",
+        "parser_kwargs": {"obofile": "go.obo"},
         "on_duplicates" : "error"
     }
 }
